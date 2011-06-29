@@ -107,11 +107,11 @@ p {
 }
 
 #3d-transforms:hover {
-	-moz-transform:scale3d(1.1) translate3d(20px) rotate3d(30deg);
-	-webkit-transform:scale3d(1.1) translate3d(20px) rotate3d(30deg);
-	-ms-transform:scale3d(1.1) translate3d(20px) rotate3d(30deg);
-	-o-transform:scale3d(1.1) translate3d(20px) rotate3d(30deg);
-	transform:scale3d(1.1) translate3d(20px) rotate3d(30deg);
+	-moz-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
+	-webkit-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
+	-ms-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
+	-o-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
+	transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
 }
 
 .first-child:hover {
