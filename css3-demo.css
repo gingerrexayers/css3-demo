@@ -98,7 +98,7 @@ p {
 	transform:scale3d(1.1) translate3d(20px) rotate3d(30deg) skew(20px);
 }
 
-#2d-transforms:hover {
+#transforms-2d:hover {
 	-moz-transform:scale(1.1) translateX(20px) translateY(20px) skewX(20px) skewY(20px);
 	-webkit-transform:scale(1.1) translateX(20px) translateY(20px) skewX(20px) skewY(20px);
 	-ms-transform:scale(1.1) translateX(20px) translateY(20px) skewX(20px) skewY(20px);
@@ -106,7 +106,7 @@ p {
 	transform:scale(1.1) translateX(20px) translateY(20px) skewX(20px) skewY(20px);
 }
 
-#3d-transforms:hover {
+#transforms-3d:hover {
 	-moz-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
 	-webkit-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
 	-ms-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
