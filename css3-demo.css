@@ -114,16 +114,39 @@ p {
 	transform:scale3d(1.1) translate3d(20px) rotate3d(30deg);
 }
 
+.first-child:hover {
+	background-color: #f00;
+	color: #000;
+}
+
 .first-child:first-child:hover {
+	background-color: #0f0;
+	color: #000;
+}
+
+.last-child:hover {
+	background-color: #f00;
+	color: #000;
 }
 
 .last-child:last-child:hover {
+	background-color: #0f0;
+	color: #000;
 }
 
-.nth-child:nth-child():hover {
+.nth-child:hover {
+	background-color: #f00;
+	color: #000;
 }
 
-.first-letter:hover {
+.nth-child:nth-child(2):hover {
+	background-color: #0f0;
+	color: #000;
+}
+
+.first-letter::first-letter {
+	font-weight: large;
+	color: #0f0;
 }
 
 #general-sibling ~ .example {
