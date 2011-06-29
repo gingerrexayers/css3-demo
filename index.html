@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CSS3 Demos for New Selectors and Properties</title>
+	<link href="css3-demo.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="border" class="example-group">
+		<div class="example" id="border-image" title="border-image">
+			<p>This div has a <code>border-image</code> when you hover over it.</p>
+		</div>
+		<div class="example" id="border-radius" title="border-radius">
+			<p>This div has a rounded border when you hover over it.</p>
+		</div>
+		<div class="example" id="box-shadow" title="box-shadow">
+			<p>This div has a shadow under it when you hover over it.</p>
+		</div>
+	</div>
+	<div id="font" class="example-group">
+		<div id="fontface" title="@font-face">
+			<p class="example" id="font-face">
+				This paragraph has a different font when you hover over it.
+			</p>
+		</div>
+	</div>
+	<div id="animation" class="example-group">
+		<div class="example" id="transitions" title="transitions">
+			<p>This div does a lot of different transitions when you hover over it.</p>
+		</div>
+		<div class="example" id="2d-transforms" title="2D Transforms (with transition to show change)">
+			<p>This div transforms in 2D when you hover over it in browsers that support it.</p>
+		</div>
+		<div class="example" id="3d-transforms" title="3D Transforms (with transition to show change)">
+			<p>This div transforms in 3D when you hover over it in browsers that support it.</p>
+		</div>
+	</div>
+	<div id="pseudo" class="example-group">
+		<div id="first-child">
+			<div class="example first-child" title="child 1">
+			</div>
+			<div class="example first-child" title="child 2">
+			</div>
+			<div class="example first-child" title="child 3">
+			</div>
+		</div>
+		<div id="last-child">
+			<div class="example last-child" title="child 1">
+			</div>
+			<div class="example last-child" title="child 2">
+			</div>
+			<div class="example last-child" title="child 3">
+			</div>
+		</div>
+		<div id="nth-child">
+			<div class="example nthchild" title="nth child 1">
+			</div>
+			<div class="example nthchild" title="nth child 2">
+			</div>
+			<div class="example nthchild" title="nth child 3">
+			</div>
+		</div>
+		<div id="first-letter">
+			<p class="example first-letter" title="first-letter">
+				example example example
+			</p>
+		</div>
+	</div>
+	<div id="selectors-3" class="example-group">
+		<div id="sibling-selector">
+			<div class="example" id="general-sibling" title="General Sibling Selector 1">
+				<p>This div will have the same styling as all the others.</p>
+			</div>
+			<div class="example" title="General Sibling Selector 2">
+				<p>This div will be lighter than the others because it is a sibling of the div before it and is selected with <code>#general-sibling ~ .example</code>.</p>
+			</div>
+		</div>
+		<div class="example" id="child-selector" title="Child Selector">
+			<p>This paragraph will have yellow letters because it is a child of the <code>#child-selector</code> div and is selected with <code>#child-selector > p</code></p>
+		</div>
+		<div id="attribute-selectors" title="Attribute Selectors">
+			<div class="example" title="Value Starting With and Value Containing">
+				<p class="attribute" title="abcdef">This paragraph will have bold text because its <code>title</code> attribute starts with the string 'abc' and it is selected with <code>.attribute[title^="abc"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
+			</div>
+			<div class="example" title="Value Ending With and Value Containing">
+				<p class="attribute" title="defghi">This paragraph will have italicized text because its <code>title</code> attribute ends with the string 'ghi' and it is selected with <code>.attribute[title$="ghi"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
+			</div>
+			<div class="example">
+				<p class="attribute" title="123456">This paragraph will look like all the others on the page because its <code>title</code> attribute does not start with the string 'abc', end with the string 'ghi', or contain the string 'def'.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
