@@ -175,14 +175,6 @@ p {
 	color: #000;
 }
 
-#select-child > .example {
-	width: 49%;
-}
-
-#child-selector > p {
-	color: #cc0;
-}
-
 #attribute-selectors > .example {
 	width: 32%;
 }
