@@ -42,7 +42,7 @@ p {
 	margin: 5px;
 }
 
-.example-group {
+.example-group, footer {
 	background: #666666;
 	width: 99%;
 	margin: 10px auto;
