@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>CSS3 Demos for New Selectors and Properties</title>
@@ -10,14 +10,12 @@
 		<div class="example" id="border-image" title="border-image">
 			<p>This div has a <code>border-image</code> when you hover over it.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 #border-image:hover {
-	padding: -54;
 	border-width: 27px;
 	-moz-border-image: url(border-image.jpg) 27;
 	-webkit-border-image: url(border-image.jpg) 27;
-	-o-border-image: url(border-image.jpg) 27;
-	border-image: url(border-image.jpg) 27;
+	border-image: url(border-image.jpg);
 }
 			</style>
 			</pre>
@@ -25,7 +23,7 @@
 		<div class="example" id="border-radius" title="border-radius">
 			<p>This div has a rounded border when you hover over it.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" type="text/css" contenteditable="">
 #border-radius:hover {
 	-webkit-border-radius: 10px 20px 30px 40px;
 	-moz-border-radius: 10px 20px 30px 40px;
@@ -38,7 +36,7 @@
 		<div class="example" id="box-shadow" title="box-shadow">
 			<p>This div has a shadow under it when you hover over it.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 #box-shadow:hover {
 	-webkit-box-shadow: 25px 25px 25px #000;
 	-moz-box-shadow: 25px 25px 25px #000;
@@ -54,7 +52,7 @@
 				This paragraph has a different font when you hover over it.
 			</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 #font-face:hover {
 	font-family:zekton;
 }
@@ -66,7 +64,7 @@
 		<div class="example" id="transitions" title="transitions">
 			<p>This div does a lot of different transitions when you hover over it.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 #transitions:hover {
 	-webkit-border-radius: 10px 20px 30px 40px;
 	-moz-border-radius: 10px 20px 30px 40px;
@@ -78,7 +76,9 @@
 	-webkit-transform: scale(1.1) translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
 	-ms-transform: scale(1.1) translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
 	-o-transform: scale(1.1) translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
+/* Transforms are still in working draft, so they aren't valid without prefixes.
 	transform: scale(1.1) translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
+*/
 }
 			</style>
 			</pre>
@@ -86,13 +86,15 @@
 		<div class="example" id="transforms-2d" title="2D Transforms (with transition to show change)">
 			<p>This div transforms in 2D when you hover over it in browsers that support it.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 #transforms-2d:hover {
 	-moz-transform:scale(1.1) translateX(20px) translateY(20px);
 	-webkit-transform:scale(1.1) translateX(20px) translateY(20px);
 	-ms-transform:scale(1.1) translateX(20px) translateY(20px);
 	-o-transform:scale(1.1) translateX(20px) translateY(20px);
+/* Transforms are still in working draft, so they aren't valid without prefixes.
 	transform:scale(1.1) translateX(20px) translateY(20px);
+*/
 }
 			</style>
 			</pre>
@@ -100,13 +102,15 @@
 		<div class="example" id="transforms-3d" title="3D Transforms (with transition to show change)">
 			<p>This div transforms in 3D when you hover over it in browsers that support it.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 #transforms-3d:hover {
 	-moz-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
 	-webkit-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
 	-ms-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
 	-o-transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
+/* Transforms are still in working draft, so they aren't valid without prefixes.
 	transform: translateX(20px) translateY(20px) translateZ(20px) rotateX(60deg) rotateY(60deg) rotateZ(60deg);
+*/
 }
 			</style>
 			</pre>
@@ -117,7 +121,7 @@
 			<div class="example first-child" title="child 1">
 				<p>This is the first child, so it will be selected by <code>.first-child:first-child</code>.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 .first-child:hover {
 	background-color: #f00;
 	color: #000;
@@ -147,7 +151,7 @@
 			<div class="example last-child" title="child 3">
 				<p>This is the last child, so it will be selected by <code>.last-child:last-child</code>.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 .last-child:hover {
 	background-color: #f00;
 	color: #000;
@@ -168,7 +172,7 @@
 			<div class="example nth-child" title="nth child 2">
 				<p>This is the 2nd child, so it will be selected by <code>.nth-child:nth-child(2)</code>.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 .nth-child:hover {
 	background-color: #f00;
 	color: #000;
@@ -186,11 +190,11 @@
 			</div>
 		</div>
 		<div id="first-letter">
-			<p class="example first-letter" title="first-letter">The first letter of this paragraph will be larger than the others and green.</p>
+			<p class="example first-letter" title="first-letter">The first letter of this paragraph will be bold and green.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 .first-letter::first-letter {
-	font-weight: large;
+	font-weight: bold;
 	color: #0f0;
 }
 			</style>
@@ -203,21 +207,21 @@
 			</div>
 			<div class="example" title="General Sibling Selector 2">
 				<p>This div will be green when you hover over it because it is a sibling of the div before it and is selected with <code>#general-sibling ~ .example</code>.</p>
-			</div>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 #general-sibling ~ .example:hover {
 	background-color: #0f0;
 	color: #000;
 }
 			</style>
 			</pre>
+			</div>
 		</div>
 		<div id="attribute-selectors" title="Attribute Selectors" class="example-group">
 			<div class="example" title="Value Starting With and Value Containing">
 				<p class="attribute" title="abcdef">This paragraph will have bold text because its <code>title</code> attribute starts with the string 'abc' and it is selected with <code>.attribute[title^="abc"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 .attribute[title^="abc"] {
 	font-weight: bold;
 }
@@ -227,7 +231,7 @@
 			<div class="example" title="Value Ending With and Value Containing">
 				<p class="attribute" title="defghi">This paragraph will have italicized text because its <code>title</code> attribute ends with the string 'ghi' and it is selected with <code>.attribute[title$="ghi"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
 			<pre>
-			<style contenteditable="">
+			<style type="text/css" contenteditable="">
 .attribute[title$="ghi"] {
 	font-style: italic;
 }

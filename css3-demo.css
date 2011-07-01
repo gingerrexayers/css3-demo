@@ -26,12 +26,16 @@ style[contenteditable] {
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
+/* transitions are still only in working draft, so the W3C unprefixed property is currently invalid.
 	transition: all 0.5s ease-in-out;
+*/
 	-webkit-perspective: 1024px;
 	-moz-perspective: 1024px;
 	-o-perspective: 1024px;
 	-ms-perspective: 1024px;
+/* same as transitions.
 	perspective: 1024px;
+*/
 }
 
 p {
@@ -40,12 +44,6 @@ p {
 
 .example-group {
 	background: #666666;
-	background: -moz-linear-gradient(top, #666666 0%, #111111 10%, #111111 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(10%,#111111), color-stop(100%,#111111));
-	background: -webkit-linear-gradient(top, #666666 0%,#111111 10%,#111111 100%);
-	background: -o-linear-gradient(top, #666666 0%,#111111 10%,#111111 100%);
-	background: -ms-linear-gradient(top, #666666 0%,#111111 10%,#111111 100%);
-	background: linear-gradient(top, #666666 0%,#111111 10%,#111111 100%);
 	width: 99%;
 	margin: 10px auto;
 	-webkit-border-radius: 25px;
@@ -58,7 +56,6 @@ p {
 }
 
 /* Everything is commented out now because all of the showcased styles are now in <style contenteditable=""></style> blocks in the index.html file now.
-
 /*
 #border-image:hover {
 	border-width: 27px;
