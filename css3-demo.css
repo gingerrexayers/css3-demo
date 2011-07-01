@@ -9,6 +9,8 @@ style[contenteditable] {
 	display: block;
 	width: 90%;
 	margin: 0 auto;
+	background-color: rgba(48,48,48,0.0);
+	color: #ccc;
 }
 
 .example {
