@@ -6,8 +6,8 @@
 	<link href="css3-demo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div id="border" class="example-group">
-		<div class="example" id="border-image" title="border-image">
+	<article id="border" class="example-group">
+		<section class="example" id="border-image" title="border-image">
 			<p>This div has a <code>border-image</code> when you hover over it.</p>
 			<pre>
 			<style type="text/css" contenteditable="">
@@ -19,8 +19,8 @@
 }
 			</style>
 			</pre>
-		</div>
-		<div class="example" id="border-radius" title="border-radius">
+		</section>
+		<section class="example" id="border-radius" title="border-radius">
 			<p>This div has a rounded border when you hover over it.</p>
 			<pre>
 			<style type="text/css" contenteditable="">
@@ -32,8 +32,8 @@
 }
 			</style>
 			</pre>
-		</div>
-		<div class="example" id="box-shadow" title="box-shadow">
+		</section>
+		<section class="example" id="box-shadow" title="box-shadow">
 			<p>This div has a shadow under it when you hover over it.</p>
 			<pre>
 			<style type="text/css" contenteditable="">
@@ -44,10 +44,10 @@
 }
 			</style>
 			</pre>
-		</div>
-	</div>
-	<div id="font" class="example-group">
-		<div id="fontface" class="example" title="@font-face">
+		</section>
+	</article>
+	<article id="font" class="example-group">
+		<section id="fontface" class="example" title="@font-face">
 			<p id="font-face">
 				This paragraph has a different font when you hover over it.
 			</p>
@@ -58,10 +58,10 @@
 }
 			</style>
 			</pre>
-		</div>
-	</div>
-	<div id="animation" class="example-group">
-		<div class="example" id="transitions" title="transitions">
+		</section>
+	</article>
+	<article id="animation" class="example-group">
+		<section class="example" id="transitions" title="transitions">
 			<p>This div does a lot of different transitions when you hover over it.</p>
 			<pre>
 			<style type="text/css" contenteditable="">
@@ -82,8 +82,8 @@
 }
 			</style>
 			</pre>
-		</div>
-		<div class="example" id="transforms-2d" title="2D Transforms (with transition to show change)">
+		</section>
+		<section class="example" id="transforms-2d" title="2D Transforms (with transition to show change)">
 			<p>This div transforms in 2D when you hover over it in browsers that support it.</p>
 			<pre>
 			<style type="text/css" contenteditable="">
@@ -98,8 +98,8 @@
 }
 			</style>
 			</pre>
-		</div>
-		<div class="example" id="transforms-3d" title="3D Transforms (with transition to show change)">
+		</section>
+		<section class="example" id="transforms-3d" title="3D Transforms (with transition to show change)">
 			<p>This div transforms in 3D when you hover over it in browsers that support it.</p>
 			<pre>
 			<style type="text/css" contenteditable="">
@@ -114,10 +114,10 @@
 }
 			</style>
 			</pre>
-		</div>
-	</div>
-	<div id="pseudo" class="example-group">
-		<div id="first-child">
+		</section>
+	</article>
+	<article id="pseudo" class="example-group">
+		<section id="first-child">
 			<div class="example first-child" title="child 1">
 				<p>This is the first child, so it will be selected by <code>.first-child:first-child</code>.</p>
 			<pre>
@@ -140,8 +140,8 @@
 			<div class="example first-child" title="child 3">
 				<p>This is not the first child, so it will not be selected by <code>.first-child:first-child</code>.</p>
 			</div>
-		</div>
-		<div id="last-child">
+		</section>
+		<section id="last-child">
 			<div class="example last-child" title="child 1">
 				<p>This is not the last child, so it will not be selected by <code>.last-child:last-child</code>.</p>
 			</div>
@@ -164,8 +164,8 @@
 			</style>
 			</pre>
 			</div>
-		</div>
-		<div id="nth-child">
+		</section>
+		<section id="nth-child">
 			<div class="example nth-child" title="nth child 1">
 				<p>This is not the 2nd child, so it will not be selected by <code>.nth-child:nth-child(2)</code>.</p>
 			</div>
@@ -188,8 +188,8 @@
 			<div class="example nth-child" title="nth child 3">
 				<p>This is not the 2nd child, so it will not be selected by <code>.nth-child:nth-child(2)</code>.</p>
 			</div>
-		</div>
-		<div id="first-letter">
+		</section>
+		<section id="first-letter">
 			<p class="example first-letter" title="first-letter">The first letter of this paragraph will be bold and green.</p>
 			<pre>
 			<style type="text/css" contenteditable="">
@@ -199,39 +199,39 @@
 }
 			</style>
 			</pre>
-		</div>
-	</div>
-		<div id="sibling-selector" class="example-group">
-			<div class="example" id="general-sibling" title="General Sibling Selector 1">
-				<p>This div will not be green when you hover over it because it is not a sibling of itself and is not selected with <code>#general-sibling ~ .example</code>.</p>
-			</div>
-			<div class="example" title="General Sibling Selector 2">
-				<p>This div will be green when you hover over it because it is a sibling of the div before it and is selected with <code>#general-sibling ~ .example</code>.</p>
-			<pre>
-			<style type="text/css" contenteditable="">
+		</section>
+	</article>
+	<article id="sibling-selector" class="example-group">
+		<section class="example" id="general-sibling" title="General Sibling Selector 1">
+			<p>This div will not be green when you hover over it because it is not a sibling of itself and is not selected with <code>#general-sibling ~ .example</code>.</p>
+		</section>
+		<section class="example" title="General Sibling Selector 2">
+			<p>This div will be green when you hover over it because it is a sibling of the div before it and is selected with <code>#general-sibling ~ .example</code>.</p>
+		<pre>
+		<style type="text/css" contenteditable="">
 #general-sibling ~ .example:hover {
 	background-color: #0f0;
 	color: #000;
 }
-			</style>
-			</pre>
-			</div>
-		</div>
-		<div id="attribute-selectors" title="Attribute Selectors" class="example-group">
-			<div class="example" title="Value Starting With and Value Containing">
-				<p class="attribute" title="abcdef">This paragraph will have bold text because its <code>title</code> attribute starts with the string 'abc' and it is selected with <code>.attribute[title^="abc"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
-			<pre>
-			<style type="text/css" contenteditable="">
+		</style>
+		</pre>
+		</section>
+	</article>
+	<article id="attribute-selectors" title="Attribute Selectors" class="example-group">
+		<section class="example" title="Value Starting With and Value Containing">
+			<p class="attribute" title="abcdef">This paragraph will have bold text because its <code>title</code> attribute starts with the string 'abc' and it is selected with <code>.attribute[title^="abc"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
+		<pre>
+		<style type="text/css" contenteditable="">
 .attribute[title^="abc"] {
 	font-weight: bold;
 }
-			</style>
-			</pre>
-			</div>
-			<div class="example" title="Value Ending With and Value Containing">
-				<p class="attribute" title="defghi">This paragraph will have italicized text because its <code>title</code> attribute ends with the string 'ghi' and it is selected with <code>.attribute[title$="ghi"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
-			<pre>
-			<style type="text/css" contenteditable="">
+		</style>
+		</pre>
+		</section>
+		<section class="example" title="Value Ending With and Value Containing">
+			<p class="attribute" title="defghi">This paragraph will have italicized text because its <code>title</code> attribute ends with the string 'ghi' and it is selected with <code>.attribute[title$="ghi"]</code>. The text will also be orange because its <code>title</code> attribute contains the string 'def' and it is selected with <code>.attribute[title*="def"]</code>.</p>
+		<pre>
+		<style type="text/css" contenteditable="">
 .attribute[title$="ghi"] {
 	font-style: italic;
 }
@@ -239,16 +239,16 @@
 .attribute[title*="def"] {
 	color: #c70;
 }
-			</style>
-			</pre>
-			</div>
-			<div class="example">
-				<p class="attribute" title="123456">This paragraph will not have italicized text, bold text, or orange text because its <code>title</code> attribute does not start with the string 'abc', end with the string 'ghi', or contain the string 'def'. It's just a regular old <code>.example</code> div because it isn't selected by attribute selectors.</p>
-			</div>
-		</div>
+		</style>
+		</pre>
+		</section>
+		<section class="example">
+			<p class="attribute" title="123456">This paragraph will not have italicized text, bold text, or orange text because its <code>title</code> attribute does not start with the string 'abc', end with the string 'ghi', or contain the string 'def'. It's just a regular old <code>.example</code> div because it isn't selected by attribute selectors.</p>
+		</section>
+	</article>
 	<footer>&copy; Mark Ayers
 		<p>
-		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.ineedwebpage.com%2Fcss3-demo%2F&profile=css3&usermedium=all&warning=1&vextwarning=true&lang=en">
 		    <img style="border:0;width:88px;height:31px"
 		        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
 		        alt="Valid CSS!" />
